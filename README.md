@@ -43,3 +43,8 @@ Also, it can understand if the current _git branch_ has some changes didn't push
 
 ![Modified Bash Prompt](./assets/bash-1.png "Modified Bash Prompt")
 
+## References
+
+[What are dotfiles](https://www.quora.com/What-are-dotfiles)
+
+[Git Status Documentation](https://git-scm.com/docs/git-status)
