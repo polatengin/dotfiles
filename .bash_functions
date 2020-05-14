@@ -36,3 +36,9 @@ function g() {
     fi
   done
 }
+
+function c() {
+  local CD="${1:-$PWD}";
+
+  code-insiders "$CD"
+}
