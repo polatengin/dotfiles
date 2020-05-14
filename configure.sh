@@ -13,3 +13,8 @@ echo ". ~/.dotfiles/.bash_prompt" >> ~/.bash_profile
 
 source ~/.bash_profile
 
+# update and upgrade current packages
+
+sudo apt-get update
+sudo apt-get -y upgrade
+
