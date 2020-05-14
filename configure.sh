@@ -18,3 +18,13 @@ source ~/.bash_profile
 sudo apt-get update
 sudo apt-get -y upgrade
 
+# install go
+
+cd /tmp
+wget https://dl.google.com/go/go1.14.2.darwin-amd64.tar.gz
+
+sudo tar -xvf go1.14.2.darwin-amd64.tar.gz
+sudo mv go /usr/local
+
+echo "export PATH=\"/usr/local/go/bin\":\${PATH}" >> ~/.bash_profile
+
