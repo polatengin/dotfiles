@@ -7,3 +7,5 @@
 . ./.bash_profile
 
 . ./.bash_prompt
+
+cd /p
