@@ -59,9 +59,12 @@ apt install -y nodejs
 echo $'\n########\ninstall yarn\n'
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
-echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.bash_profile
+echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.dotfiles/.bash_profile
 
-source ~/.bash_profile
+# load .bash_profile
+echo $'\n########\nload .bash_profile\n'
+
+source ~/.dotfiles/.bash_profile
 
 # configure git credential manager
 echo $'\n########\nconfigure git credential manager\n'
