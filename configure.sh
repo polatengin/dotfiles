@@ -21,6 +21,11 @@ echo $'\n########\nupdate and upgrade current packages\n'
 apt-get update
 apt-get -y upgrade
 
+# install global dependencies
+echo $'\n########\ninstall global dependencies\n'
+
+apt install -y jq unzip
+
 # install go
 echo $'\n########\ninstall go\n'
 
