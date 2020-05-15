@@ -28,7 +28,7 @@ apt-get -y upgrade
 
 # install go
 
-apt install golang
+apt install -y golang
 
 # install dotnet
 
@@ -52,7 +52,7 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 
 # install node
 
-apt install nodejs
+apt install -y nodejs
 
 # install yarn
 
