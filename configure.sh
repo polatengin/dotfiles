@@ -13,6 +13,9 @@ echo ". ~/.dotfiles/.bash_prompt" >> ~/.bash_profile
 
 source ~/.bash_profile
 
+# create projects folder
+
+mkdir -p /p
 # update and upgrade current packages
 
 sudo apt-get update
