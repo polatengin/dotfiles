@@ -55,6 +55,11 @@ echo $'\n########\ninstall node\n'
 
 apt install -y nodejs
 
+# install deno
+echo $'\n########\ninstall deno\n'
+
+curl -fsSL https://deno.land/x/install/install.sh | sh
+
 # install yarn
 echo $'\n########\ninstall yarn\n'
 
