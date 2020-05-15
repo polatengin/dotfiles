@@ -63,10 +63,7 @@ sudo apt install -y nodejs
 # install deno
 echo $'\n########\ninstall deno\n'
 
-curl -fsSL https://deno.land/x/install/install.sh | sh
-
-echo "export DENO_INSTALL=\"/root/.deno\"" >> ~/.dotfiles/.bash_profile
-echo "export PATH=\"$DENO_INSTALL/bin:$PATH\"" >> ~/.dotfiles/.bash_profile
+curl -fsSL https://deno.land/x/install/install.sh | sudo DENO_INSTALL=/usr/local sh
 
 # install yarn
 echo $'\n########\ninstall yarn\n'
