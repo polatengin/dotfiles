@@ -6,7 +6,7 @@ set -e
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
-rm -rf ~/.dotfiles
+sudo rm -rf ~/.dotfiles
 
 git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 
@@ -48,7 +48,7 @@ echo $'\n########\ninstall kubectl\n'
 
 cd /usr/local/bin
 sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
-chmod +x ./kubectl
+sudo chmod +x ./kubectl
 
 # install helm
 echo $'\n########\ninstall helm\n'
