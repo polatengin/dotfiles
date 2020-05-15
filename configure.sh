@@ -74,7 +74,9 @@ echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
 
-source ~/.dotfiles/.bash_profile
+cd ~/.dotfiles
+
+source .bash_profile
 
 # configure git credential manager
 echo $'\n########\nconfigure git credential manager\n'
