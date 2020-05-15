@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-. ./.bash_aliases
+. ~/.dotfiles/.bash_aliases
 
-. ./.bash_functions
+. ~/.dotfiles/.bash_functions
 
-. ./.bash_prompt
+. ~/.dotfiles/.bash_prompt
 
 cd /p
