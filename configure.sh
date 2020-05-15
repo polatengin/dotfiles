@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# stop on error
+set -e
 # clone dotfiles repo
 
 cd ~/
