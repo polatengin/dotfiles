@@ -81,9 +81,7 @@ echo "source ~/.dotfiles/.bash_profile" >> ~/.bashrc
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
 
-cd ~/.dotfiles
-
-source .bash_profile
+source ~/.dotfiles/.bash_profile
 
 # configure git credential manager
 echo $'\n########\nconfigure git credential manager\n'
