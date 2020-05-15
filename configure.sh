@@ -28,13 +28,7 @@ apt-get -y upgrade
 
 # install go
 
-cd /tmp
-wget https://dl.google.com/go/go1.14.2.darwin-amd64.tar.gz
-
-tar -xvf go1.14.2.darwin-amd64.tar.gz
-mv go /usr/local
-
-echo "export PATH=\"/usr/local/go/bin\":\${PATH}" >> ~/.bash_profile
+apt install golang
 
 # install dotnet
 
