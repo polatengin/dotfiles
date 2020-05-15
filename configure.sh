@@ -50,3 +50,6 @@ chmod +x ./kubectl
 
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
+# install node
+
+apt install nodejs
