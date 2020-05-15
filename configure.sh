@@ -27,8 +27,9 @@ echo $'\n########\ninstall go\n'
 apt install -y golang
 
 # install dotnet
-$'\n########\ninstall dotnet\n'
+echo $'\n########\ninstall dotnet\n'
 
+cd /tmp
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 
