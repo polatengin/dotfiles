@@ -3,6 +3,12 @@
 # stop on error
 set -e
 
+cd ~/
+p=$pwd
+
+# get root permissions
+sudo su
+
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
