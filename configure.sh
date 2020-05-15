@@ -3,18 +3,10 @@
 # stop on error
 set -e
 
-cd ~/
-p=$PWD
-
-# get root permissions
-sudo su
-
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
-cd "$p"
-
-git clone https://github.com/polatengin/dotfiles.git .dotfiles
+git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 
 # create projects folder
 echo $'\n########\ncreate projects folder\n'
@@ -24,18 +16,18 @@ mkdir -p /p
 # update and upgrade current packages
 echo $'\n########\nupdate and upgrade current packages\n'
 
-apt-get update
-apt-get -y upgrade
+sudo apt-get update
+sudo apt-get -y upgrade
 
 # install global dependencies
 echo $'\n########\ninstall global dependencies\n'
 
-apt install -y jq unzip
+sudo apt install -y jq unzip
 
 # install go
 echo $'\n########\ninstall go\n'
 
-apt install -y golang
+sudo apt install -y golang
 
 # install dotnet
 echo $'\n########\ninstall dotnet\n'
@@ -44,10 +36,10 @@ cd /tmp
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 
-apt-get update
-apt-get install -y apt-transport-https
-apt-get update
-apt-get install -y dotnet-sdk-3.1
+sudo apt-get update
+sudo apt-get install -y apt-transport-https
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-3.1
 
 # install kubectl
 echo $'\n########\ninstall kubectl\n'
@@ -64,26 +56,26 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 # install node
 echo $'\n########\ninstall node\n'
 
-apt install -y nodejs
+sudo apt install -y nodejs
 
 # install deno
 echo $'\n########\ninstall deno\n'
 
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-echo "export DENO_INSTALL=\"/root/.deno\"" >> "$p/.dotfiles/.bash_profile"
-echo "export PATH=\"$DENO_INSTALL/bin:$PATH\"" >> "$p/.dotfiles/.bash_profile"
+echo "export DENO_INSTALL=\"/root/.deno\"" >> "~/.dotfiles/.bash_profile"
+echo "export PATH=\"$DENO_INSTALL/bin:$PATH\"" >> "~/.dotfiles/.bash_profile"
 
 # install yarn
 echo $'\n########\ninstall yarn\n'
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
-echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> "$p/.dotfiles/.bash_profile"
+echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> "~/.dotfiles/.bash_profile"
 
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
 
-cd "$p/.dotfiles"
+cd "~/.dotfiles"
 
 source .bash_profile
 
