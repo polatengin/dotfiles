@@ -2,9 +2,7 @@
 
 cd ~/
 
-mkdir .dotfiles
-
-git clone https://github.com/polatengin/dotfiles.git
+git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 
 echo ". ~/.dotfiles/.bash_aliases" >> ~/.bash_profile
 echo ". ~/.dotfiles/.bash_functions" >> ~/.bash_profile
