@@ -6,6 +6,8 @@ set -e
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
+rm -rf ~/.dotfiles
+
 git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 
 # create projects folder
