@@ -65,14 +65,14 @@ echo $'\n########\ninstall deno\n'
 
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-echo "export DENO_INSTALL=\"/root/.deno\"" >> "~/.dotfiles/.bash_profile"
-echo "export PATH=\"$DENO_INSTALL/bin:$PATH\"" >> "~/.dotfiles/.bash_profile"
+echo "export DENO_INSTALL=\"/root/.deno\"" >> ~/.dotfiles/.bash_profile
+echo "export PATH=\"$DENO_INSTALL/bin:$PATH\"" >> ~/.dotfiles/.bash_profile
 
 # install yarn
 echo $'\n########\ninstall yarn\n'
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
-echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> "~/.dotfiles/.bash_profile"
+echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.dotfiles/.bash_profile
 
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
