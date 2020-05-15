@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# clone dotfiles repo
+
 cd ~/
 
 git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
