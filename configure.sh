@@ -53,3 +53,10 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 # install node
 
 apt install nodejs
+
+# install yarn
+
+curl -o- -L https://yarnpkg.com/install.sh | bash
+echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.bash_profile
+
+source ~/.bash_profile
