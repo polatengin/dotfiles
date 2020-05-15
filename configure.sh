@@ -60,3 +60,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.bash_profile
 
 source ~/.bash_profile
+
+# configure git credential manager
+
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
