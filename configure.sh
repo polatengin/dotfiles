@@ -11,7 +11,7 @@ git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 # create projects folder
 echo $'\n########\ncreate projects folder\n'
 
-mkdir -p /p
+sudo mkdir -p /p
 
 # update and upgrade current packages
 echo $'\n########\nupdate and upgrade current packages\n'
