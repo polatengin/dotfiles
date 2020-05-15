@@ -75,12 +75,12 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 echo $'\n########\ninstall yarn\n'
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
-echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.dotfiles/.bash_profile
+echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> "$p/.dotfiles/.bash_profile"
 
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
 
-cd ~/.dotfiles
+cd "$p/.dotfiles"
 
 source .bash_profile
 
