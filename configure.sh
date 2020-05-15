@@ -16,6 +16,11 @@ source ~/.bash_profile
 # create projects folder
 
 mkdir -p /p
+
+# set projects folder as default folder
+
+echo "cd /p" >> ~/.bash_profile
+
 # update and upgrade current packages
 
 sudo apt-get update
