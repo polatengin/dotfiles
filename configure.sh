@@ -4,7 +4,7 @@
 set -e
 
 cd ~/
-p=$pwd
+p=$PWD
 
 # get root permissions
 sudo su
