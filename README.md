@@ -9,6 +9,12 @@ As a result, any file with a name beginning with '.' was not reported by ls, i.e
 A user's home directory was a convenient place to put user-specific configuration files, but such files were also an eyesore; one popular solution to this problem was to make those configuration files hidden so that they wouldn't annoy the user.
 Thus, the tradition of dot-files was born.
 
+You can use my `dotfiles` by executing following command on Terminal
+
+```bash
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/configure.sh)"
+```
+
 In the [.bash_aliases](./.bash_aliases) file, you can find some aliases for _Bash_.
 
 If you want to grab your _internal_ or _external_ IP address, every time you need to run following commands on _Terminal_
