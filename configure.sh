@@ -47,7 +47,7 @@ sudo apt-get install -y dotnet-sdk-3.1
 echo $'\n########\ninstall kubectl\n'
 
 cd /usr/local/bin
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+sudo curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 
 # install helm
