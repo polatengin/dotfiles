@@ -77,7 +77,7 @@ echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:
 # load .bash_profile
 echo $'\n########\nload .bash_profile\n'
 
-cd "~/.dotfiles"
+cd ~/.dotfiles
 
 source .bash_profile
 
