@@ -2,7 +2,9 @@
 
 # stop on error
 set -e
+
 # clone dotfiles repo
+echo $'\n########\nclone dotfiles repo\n'
 
 cd ~/
 
