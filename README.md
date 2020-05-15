@@ -12,7 +12,7 @@ Thus, the tradition of dot-files was born.
 You can use my `dotfiles` by executing following command on Terminal
 
 ```bash
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh)"
 ```
 
 In the [.bash_aliases](./.bash_aliases) file, you can find some aliases for _Bash_.
