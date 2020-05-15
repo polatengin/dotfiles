@@ -34,7 +34,7 @@ echo $'\n########\ninstall dotnet\n'
 
 cd /tmp
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 
 sudo apt-get update
 sudo apt-get install -y apt-transport-https
