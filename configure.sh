@@ -12,9 +12,9 @@ sudo su
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
-cd ~/
+cd "$p"
 
-git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
+git clone https://github.com/polatengin/dotfiles.git .dotfiles
 
 # create projects folder
 echo $'\n########\ncreate projects folder\n'
