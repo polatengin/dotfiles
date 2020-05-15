@@ -8,3 +8,4 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 
 alias k="kubectl"
 
+alias kcd="kubectl config use-context docker-desktop"
