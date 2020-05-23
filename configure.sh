@@ -65,6 +65,11 @@ echo $'\n########\ninstall node\n'
 
 sudo apt install -y nodejs
 
+# install npm
+echo $'\n########\ninstall npm\n'
+
+sudo apt install -y npm
+
 # install deno
 echo $'\n########\ninstall deno\n'
 
