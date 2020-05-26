@@ -31,6 +31,11 @@ echo $'\n########\ninstall go\n'
 
 sudo apt install -y golang
 
+# install ruby
+echo $'\n########\ninstall ruby\n'
+
+sudo apt install -y ruby-dev
+
 # install dotnet
 echo $'\n########\ninstall dotnet\n'
 
