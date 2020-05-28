@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # stop on error
-set -e
+# set -e
 
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
