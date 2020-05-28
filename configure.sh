@@ -65,6 +65,13 @@ echo $'\n########\ninstall helm\n'
 
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
+# install kubeval
+echo $'\n########\ninstall kubeval\n'
+
+wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
+tar xf kubeval-linux-amd64.tar.gz
+sudo cp kubeval /usr/local/bin
+
 # install node
 echo $'\n########\ninstall node\n'
 
