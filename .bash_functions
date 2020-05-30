@@ -40,5 +40,12 @@ function g() {
 function c() {
   local CD="${1:-$PWD}";
 
-  code-insiders "$CD"
+  local _executable=`command -v code-insiders`
+
+  if [[ -z $_executable ]]
+  then
+    code "$CD"
+  else
+    code-insiders "$CD"
+  fi
 }
