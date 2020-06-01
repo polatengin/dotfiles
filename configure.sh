@@ -93,6 +93,11 @@ echo $'\n########\ninstall yarn\n'
 curl -o- -L https://yarnpkg.com/install.sh | bash
 echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.dotfiles/.bash_profile
 
+# install locust
+echo $'\n########\ninstall locust\n'
+
+pip3 install locust
+
 # install midnight commander
 echo $'\n########\ninstall midnight commander\n'
 
