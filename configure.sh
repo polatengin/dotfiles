@@ -73,6 +73,11 @@ wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_am
 unzip terraform_0.12.26_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 
+# install jmespath.terminal
+echo $'\n########\ninstall jmespath.terminal\n'
+
+pip3 install jmespath-terminal
+
 # install kubeval
 echo $'\n########\ninstall kubeval\n'
 
