@@ -65,9 +65,18 @@ echo $'\n########\ninstall helm\n'
 
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 
+# install terraform
+echo $'\n########\ninstall terraform\n'
+
+cd /tmp
+wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
+unzip terraform_0.12.26_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+
 # install kubeval
 echo $'\n########\ninstall kubeval\n'
 
+cd /tmp
 wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
 tar xf kubeval-linux-amd64.tar.gz
 sudo cp kubeval /usr/local/bin
