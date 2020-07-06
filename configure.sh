@@ -26,6 +26,11 @@ echo $'\n########\ninstall global dependencies\n'
 
 sudo apt install -y jq unzip
 
+# install pip3
+echo $'\n########\ninstall pip3\n'
+
+sudo apt install -y python3-pip
+
 # install go
 echo $'\n########\ninstall go\n'
 
