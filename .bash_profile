@@ -5,5 +5,3 @@
 . ~/.dotfiles/.bash_functions
 
 . ~/.dotfiles/.bash_prompt
-
-cd /p
