@@ -3,6 +3,17 @@
 # stop on error
 # set -e
 
+# collect name and email and save it as git config, globally
+
+read -p "Please enter your git user.name, (for example, polatengin)" name
+name=${name:-"polatengin"}
+
+read -p "Please enter your git user.email, (for example, polatengin[at]hotmail[dot]com)" email
+email=${email:-"polatengin@hotmail.com"}
+
+git config --global user.name $name
+git config --global user.email $email
+
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
 
