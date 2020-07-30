@@ -15,6 +15,12 @@ You can use my `dotfiles` by executing following command on Terminal
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh)"
 ```
 
+If you want to provide git username and email during configure, you can execute following command
+
+```bash
+curl https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh | bash -s -- {GIT_USERNAME} {GIT_EMAIL}
+```
+
 In the [.bash_aliases](./.bash_aliases) file, you can find some aliases for _Bash_.
 
 If you want to grab your _internal_ or _external_ IP address, every time you need to run following commands on _Terminal_
