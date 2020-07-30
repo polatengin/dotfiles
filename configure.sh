@@ -4,15 +4,23 @@
 # set -e
 
 # collect name and email and save it as git config, globally
+NAME=$1
+EMAIL=$2
 
-read -p "Please enter your git user.name, (for example, polatengin)" name
-name=${name:-"polatengin"}
+if [ -z "$NAME" ]
+then
+  read -p "Please enter your git user.name, (for example, polatengin)" NAME
+  NAME=${NAME:-"polatengin"}
+fi
 
-read -p "Please enter your git user.email, (for example, polatengin[at]hotmail[dot]com)" email
-email=${email:-"polatengin@hotmail.com"}
+if [ -z "$EMAIL" ]
+then
+  read -p "Please enter your git user.email, (for example, polatengin[at]outlook[dot]com)" EMAIL
+  EMAIL=${EMAIL:-"polatengin@outlook.com"}
+fi
 
-git config --global user.name $name
-git config --global user.email $email
+git config --global user.name $NAME
+git config --global user.email $EMAIL
 
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
