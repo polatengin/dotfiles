@@ -43,7 +43,7 @@ sudo apt-get -y upgrade
 # install global dependencies
 echo $'\n########\ninstall global dependencies\n'
 
-sudo apt install -y jq unzip
+sudo apt install -y jq unzip python3-setuptools
 
 # install pip3
 echo $'\n########\ninstall pip3\n'
