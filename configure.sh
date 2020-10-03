@@ -93,8 +93,8 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 echo $'\n########\ninstall terraform\n'
 
 cd /tmp
-wget https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_linux_amd64.zip
-unzip terraform_0.12.26_linux_amd64.zip
+wget https://releases.hashicorp.com/terraform/0.13.4/terraform_0.13.4_linux_amd64.zip
+unzip terraform_0.13.4_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 
 # install jmespath.terminal
