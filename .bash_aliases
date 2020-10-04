@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias ll="ls -li"
+alias ll="ls -lah"
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
