@@ -23,9 +23,8 @@ fi
 git config --global user.name $NAME
 git config --global user.email $EMAIL
 
-if [ -z "$GPG_KEY" ]
+if [ ! -z "$GPG_KEY" ]
 then
-else
   git config --global user.signingkey "$GPG_KEY"
   git config --global commit.gpgsign true
 fi
