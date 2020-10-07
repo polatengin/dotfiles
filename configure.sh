@@ -6,6 +6,7 @@
 # collect name and email and save it as git config, globally
 NAME=$1
 EMAIL=$2
+GPG_KEY=$3
 
 if [ -z "$NAME" ]
 then
@@ -21,6 +22,13 @@ fi
 
 git config --global user.name $NAME
 git config --global user.email $EMAIL
+
+if [ -z "$GPG_KEY" ]
+then
+else
+  git config --global user.signingkey "$GPG_KEY"
+  git config --global commit.gpgsign true
+fi
 
 # clone dotfiles repo
 echo $'\n########\nclone dotfiles repo\n'
