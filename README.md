@@ -18,7 +18,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/mast
 If you want to provide git username and email during configure, you can execute following command
 
 ```bash
-curl https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh | bash -s -- {GIT_USERNAME} {GIT_EMAIL}
+curl https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh | bash -s -- ${GIT_USERNAME} ${GIT_EMAIL} ${GPG_KEY}
 ```
 
 In the [.bash_aliases](./.bash_aliases) file, you can find some aliases for _Bash_.
