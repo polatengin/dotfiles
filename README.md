@@ -15,7 +15,7 @@ You can use my `dotfiles` by executing following command on Terminal
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh)"
 ```
 
-If you want to provide git username and email during configure, you can execute following command
+If you want to provide git username, email and gpg_key during configure, you can execute the following command
 
 ```bash
 curl https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh | bash -s -- ${GIT_USERNAME} ${GIT_EMAIL} ${GPG_KEY}
