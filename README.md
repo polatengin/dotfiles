@@ -12,13 +12,13 @@ Thus, the tradition of dot-files was born.
 You can use my `dotfiles` by executing following command on Terminal
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/polatengin/dotfiles/master/install.sh)"
 ```
 
 If you want to provide git username, email and gpg_key during configure, you can execute the following command
 
 ```bash
-curl https://raw.githubusercontent.com/polatengin/dotfiles/master/configure.sh | bash -s -- ${GIT_USERNAME} ${GIT_EMAIL} ${GPG_KEY}
+curl https://raw.githubusercontent.com/polatengin/dotfiles/master/install.sh | bash -s -- ${GIT_USERNAME} ${GIT_EMAIL} ${GPG_KEY}
 ```
 
 In the [.bash_aliases](./.bash_aliases) file, you can find some aliases for _Bash_.
