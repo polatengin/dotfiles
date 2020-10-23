@@ -152,6 +152,11 @@ echo $'\n########\ninstall ncu\n'
 
 npm install -g npm-check-updates
 
+# install wrangler
+echo $'\n########\ninstall wrangler\n'
+
+sudo npm install @cloudflare/wrangler --global --allow-root --unsafe-perm=true
+
 # install locust
 echo $'\n########\ninstall locust\n'
 
