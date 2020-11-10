@@ -50,7 +50,17 @@ sudo apt-get -y upgrade
 # install global dependencies
 echo $'\n########\ninstall global dependencies\n'
 
-sudo apt install -y nano htop jq unzip python3-setuptools
+sudo apt install -y nano htop unzip python3-setuptools
+
+# install jq and yq
+echo $'\n########\ninstall jq and yq\n'
+
+sudo apt install -y jq
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CC86BB64
+sudo add-apt-repository ppa:rmescandon/yq
+sudo apt update
+sudo apt install yq -y
 
 # install pip3
 echo $'\n########\ninstall pip3\n'
