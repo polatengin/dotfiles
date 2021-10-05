@@ -36,6 +36,15 @@
         },
         {
           "PackageIdentifier": "Microsoft.AzureStorageExplorer"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode.Insiders"
+        },
+        {
+          "PackageIdentifier": "Spotify.Spotify"
+        },
+        {
+          "PackageIdentifier": "Microsoft.EdgeDev"
         }
       ],
       "SourceDetails": {
