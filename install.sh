@@ -118,10 +118,9 @@ curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bas
 # install terraform
 echo $'\n########\ninstall terraform\n'
 
-cd /tmp
-wget https://releases.hashicorp.com/terraform/0.13.4/terraform_0.13.4_linux_amd64.zip
-unzip terraform_0.13.4_linux_amd64.zip
-sudo mv terraform /usr/local/bin/
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt install terraform
 
 # install jmespath.terminal
 echo $'\n########\ninstall jmespath.terminal\n'
