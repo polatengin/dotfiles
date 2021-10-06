@@ -39,7 +39,7 @@ git clone https://github.com/polatengin/dotfiles.git ~/.dotfiles
 # create projects folder
 echo $'\n########\ncreate projects folder\n'
 
-sudo mkdir -p /p
+sudo mkdir -p ~/p
 
 # update and upgrade current packages
 echo $'\n########\nupdate and upgrade current packages\n'
@@ -71,11 +71,6 @@ sudo apt install -y python3-pip
 echo $'\n########\ninstall go\n'
 
 sudo apt install -y golang
-
-# install ruby
-echo $'\n########\ninstall ruby\n'
-
-sudo apt install -y ruby-dev
 
 # install dotnet
 echo $'\n########\ninstall dotnet\n'
@@ -160,24 +155,6 @@ echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:
 echo $'\n########\ninstall ncu\n'
 
 npm install -g npm-check-updates
-
-# install wrangler
-echo $'\n########\ninstall wrangler\n'
-
-sudo npm install @cloudflare/wrangler --global --allow-root --unsafe-perm=true
-
-# install locust
-echo $'\n########\ninstall locust\n'
-
-pip3 install locust
-
-# install k6
-echo $'\n########\ninstall k6\n'
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
-echo "deb https://dl.bintray.com/loadimpact/deb stable main" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install -y k6
 
 # install midnight commander
 echo $'\n########\ninstall midnight commander\n'
