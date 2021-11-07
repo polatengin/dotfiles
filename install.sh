@@ -154,7 +154,7 @@ echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:
 # install ncu
 echo $'\n########\ninstall ncu\n'
 
-npm install -g npm-check-updates
+sudo npm install -g npm-check-updates
 
 # install midnight commander
 echo $'\n########\ninstall midnight commander\n'
