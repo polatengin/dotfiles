@@ -96,17 +96,6 @@ echo $'\n########\ninstall npm\n'
 
 sudo apt install -y npm
 
-# install deno
-echo $'\n########\ninstall deno\n'
-
-curl -fsSL https://deno.land/x/install/install.sh | sudo DENO_INSTALL=/usr/local sh
-
-# install yarn
-echo $'\n########\ninstall yarn\n'
-
-curl -o- -L https://yarnpkg.com/install.sh | bash
-echo "export PATH=\"$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH\"" >> ~/.dotfiles/.bash_profile
-
 # install ncu
 echo $'\n########\ninstall ncu\n'
 
