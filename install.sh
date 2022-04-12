@@ -54,32 +54,6 @@ sudo apt install yq -y
 
 sudo apt install -y python3-pip
 
-# install go
-echo $'\n########\ninstall go\n'
-
-sudo apt install -y golang
-
-# install dotnet
-echo $'\n########\ninstall dotnet\n'
-
-cd /tmp
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-
-sudo apt-get update
-sudo apt-get install -y apt-transport-https
-sudo apt-get update
-sudo apt-get install -y dotnet-sdk-5.0
-
-# install azure function core tools
-echo $'\n########\ninstall azure function core tools\n'
-
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs)-prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list'
-sudo apt-get update
-sudo apt-get install -y azure-functions-core-tools-3
-
 # install azure cli
 echo $'\n########\ninstall azure cli\n'
 
