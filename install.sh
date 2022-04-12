@@ -40,7 +40,7 @@ sudo apt-get -y upgrade
 # install global dependencies
 echo $'\n########\ninstall global dependencies\n'
 
-sudo apt install -y nano htop unzip python3-setuptools
+sudo apt install -y nano htop unzip
 
 # install jq and yq
 echo $'\n########\ninstall jq and yq\n'
