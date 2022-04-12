@@ -3,29 +3,19 @@
 # stop on error
 # set -e
 
-# collect name and email and save it as git config, globally
-NAME=$1
-EMAIL=$2
-GPG_KEY=$3
-
-if [ -z "$NAME" ]
+if [ ! -z "${1}" ]
 then
-  read -p "Please enter your git user.name, (for example, polatengin)" NAME
-  NAME=${NAME:-"polatengin"}
+  git config --global user.name "${1}"
 fi
 
-if [ -z "$EMAIL" ]
+if [ ! -z "${2}" ]
 then
-  read -p "Please enter your git user.email, (for example, polatengin[at]outlook[dot]com)" EMAIL
-  EMAIL=${EMAIL:-"polatengin@outlook.com"}
+  git config --global user.email "${2}"
 fi
 
-git config --global user.name $NAME
-git config --global user.email $EMAIL
-
-if [ ! -z "$GPG_KEY" ]
+if [ ! -z "${3}" ]
 then
-  git config --global user.signingkey "$GPG_KEY"
+  git config --global user.signingkey "${3}"
   git config --global commit.gpgsign true
 fi
 
