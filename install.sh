@@ -119,15 +119,5 @@ sudo apt install gh
 
 echo "source ~/.dotfiles/.bash_profile" >> ~/.bashrc
 
-# load .bash_profile
-echo $'\n########\nload .bash_profile\n'
-
-source ~/.dotfiles/.bash_profile
-
-# configure git credential manager
-echo $'\n########\nconfigure git credential manager\n'
-
-git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
-
 # done
 echo $'\n########\ndone\n'
