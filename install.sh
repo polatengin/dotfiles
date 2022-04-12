@@ -52,9 +52,6 @@ sudo add-apt-repository ppa:rmescandon/yq
 sudo apt update
 sudo apt install yq -y
 
-# install pip3
-echo $'\n########\ninstall pip3\n'
-
 sudo apt install -y python3-pip
 
 # install go
