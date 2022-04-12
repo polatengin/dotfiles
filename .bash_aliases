@@ -11,3 +11,5 @@ alias k="kubectl"
 alias kcd="kubectl config use-context docker-desktop"
 
 alias d="docker $*"
+
+alias go="docker run --rm -it -v $(pwd):/p -w /p golang:1.18-buster go"
