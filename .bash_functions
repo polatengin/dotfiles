@@ -67,8 +67,11 @@ function az_bicep_generate() {
   fi
 }
 
-function c() {
-  local CD="${1:-$PWD}";
+add_extension \
+  --command-name "az" \
+  --sub-command-name "bicep" \
+  --argument-name "--help" \
+  --run "az_bicep_help"
 
   local _executable=`command -v code-insiders`
 
