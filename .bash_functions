@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 
-function mkd() {
-  mkdir -p "$@" && cd "$_";
+function c() {
+  local CD="${1:-$PWD}";
+
+  local _executable=`command -v code-insiders`
+
+  if [[ -z $_executable ]]
+  then
+    code "$CD"
+  else
+    code-insiders "$CD"
+  fi
 }
 
 function server() {
