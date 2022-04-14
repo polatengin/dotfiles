@@ -25,31 +25,45 @@ function az_bicep_help() {
   echo -e "${output/Commands:/${_command_usage}}"
 }
 
-function g() {
-  local CD="${1:-$PWD}";
+function az_bicep_generate() {
+  # check only for the arguments that we want to extend
+  if [[ ${1} == "bicep" && ${2} == "generate" ]]; then
 
-  cd "$CD"
+    # if required arguments are present, execute the command
+    if [[ ${3} == "--resource-group" || ${3} == "-n" ]]; then
 
-  for d in */ ; do
-    cd "$d"
+      # default filename is the resource group name
+      local FILE_NAME="${4}"
 
-    if [ ! -d .git ]; then
-      cd "$CD"
+      # if the filename is not provided, use the given name
+      if [[ ${5} == "--output-file" || ${5} == "-f" ]]; then
+        FILE_NAME="${6}"
+      fi
 
-      continue
-    fi
+      # if extension is not provided, use the `.bicep` extension
+      if [[ ${FILE_NAME} != *".bicep" ]]; then
+        FILE_NAME="${FILE_NAME}.bicep"
+      fi
 
-    if [[ -z $(git status -s) ]]
-    then
-      cd "$CD"
+      # export the resource group to the temp file
+      az group export --name "${4}" > "/tmp/${4}.json"
 
-      continue
+      # generate the bicep file from the temp file
+      az bicep decompile --file "/tmp/${4}.json"
+
+      # remove the temp file
+      rm -f "/tmp/${4}.json"
+
+      # move the bicep file to the desired location
+      mv "/tmp/${4}.bicep" "./${FILE_NAME}"
+    # if required arguments are not present, print the usage message
     else
-      echo "$d is dirty!"
-
-      cd "$CD"
+      echo "Usage: az bicep generate --resource-group <resource-group-name> [--output-file <file-name>]";
     fi
-  done
+
+    # return from the function
+    return 0
+  fi
 }
 
 function c() {
