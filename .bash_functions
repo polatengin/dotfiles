@@ -73,12 +73,8 @@ add_extension \
   --argument-name "--help" \
   --run "az_bicep_help"
 
-  local _executable=`command -v code-insiders`
-
-  if [[ -z $_executable ]]
-  then
-    code "$CD"
-  else
-    code-insiders "$CD"
-  fi
-}
+add_extension \
+  --command-name "az" \
+  --sub-command-name "bicep" \
+  --argument-name "generate" \
+  --run "az_bicep_generate"
