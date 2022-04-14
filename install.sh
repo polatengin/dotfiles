@@ -52,8 +52,6 @@ sudo add-apt-repository ppa:rmescandon/yq
 sudo apt update
 sudo apt install yq -y
 
-sudo apt install -y python3-pip
-
 # install azure cli
 echo $'\n########\ninstall azure cli\n'
 
