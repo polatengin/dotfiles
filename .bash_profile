@@ -4,8 +4,12 @@ export GPG_TTY=$(tty)
 
 export HISTCONTROL=erasedups
 
-. ~/.dotfiles/.bash_aliases
+source ~/.dotfiles/.bash_aliases
 
-. ~/.dotfiles/.bash_functions
+source ~/.dotfiles/_helpers.sh
 
-. ~/.dotfiles/.bash_prompt
+source ~/.dotfiles/.bash_functions
+
+setup_extensions
+
+source ~/.dotfiles/.bash_prompt
