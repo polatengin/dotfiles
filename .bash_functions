@@ -13,10 +13,16 @@ function c() {
   fi
 }
 
-function server() {
-  local port="${1:-8000}";
-  sleep 1 && open "http://localhost:${port}/" &
-  python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
+
+function az_bicep_help() {
+  # get output of `az bicep --help` command
+  local output=$(command az bicep --help)
+
+  # command description that will added to `--help` text
+  local _command_usage="Commands:\n    generate      : Generate bicep file from the existing Resource Group."
+
+  # replace `Commands:` with `Commands:` and command description
+  echo -e "${output/Commands:/${_command_usage}}"
 }
 
 function g() {
