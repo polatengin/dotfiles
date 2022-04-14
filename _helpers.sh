@@ -64,7 +64,7 @@ copy_function() {
 }
 
 function setup_extensions() {
-  for entry in ./extensions/*.sh
+  for entry in ~/.dotfiles/extensions/*.sh
   do
     source ${entry}
     FILE_NAME=${entry##*/}
