@@ -84,21 +84,6 @@ wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-lin
 tar xf kubeval-linux-amd64.tar.gz
 sudo cp kubeval /usr/local/bin
 
-# install node
-echo $'\n########\ninstall node\n'
-
-sudo apt install -y nodejs
-
-# install npm
-echo $'\n########\ninstall npm\n'
-
-sudo apt install -y npm
-
-# install ncu
-echo $'\n########\ninstall ncu\n'
-
-sudo npm install -g npm-check-updates
-
 # install midnight commander
 echo $'\n########\ninstall midnight commander\n'
 
