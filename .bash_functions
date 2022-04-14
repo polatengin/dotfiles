@@ -13,7 +13,7 @@ function c() {
   fi
 }
 
-source ./_helpers.sh
+source ~/.dotfiles/_helpers.sh
 
 function az_bicep_help() {
   # get output of `az bicep --help` command
