@@ -16,3 +16,6 @@ EOF
 )
 }
 
+function repo_help() {
+  echo "gh_repo_help"
+}
