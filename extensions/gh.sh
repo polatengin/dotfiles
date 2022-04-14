@@ -19,3 +19,7 @@ EOF
 function repo_help() {
   echo "gh_repo_help"
 }
+
+function repo_generate() {
+  echo "gh_repo_generate"
+}
