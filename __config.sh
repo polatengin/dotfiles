@@ -100,5 +100,6 @@ code-insiders --install-extension GitHub.vscode-pull-request-github
 code-insiders --install-extension ms-dotnettools.vscodeintellicode-csharp
 code-insiders --install-extension ms-vscode.makefile-tools
 code-insiders --install-extension DavidAnson.vscode-markdownlint
+code-insiders --install-extension HashiCorp.terraform
 
 chsh -s $(which zsh)
