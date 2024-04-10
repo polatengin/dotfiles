@@ -40,7 +40,7 @@ sudo npm install -g @microsoft/teamsapp-cli
 ### rust
 sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-echo "source \"\$HOME/.cargo/env\"" > ~/.zshrc
+echo "source \"\$HOME/.cargo/env\"" >> ~/.zshrc
 
 ### powershell 7
 # source /etc/os-release
